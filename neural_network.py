@@ -23,6 +23,14 @@ def init_parameters(data):
     return X, w1, b1, w2, b2
 
 
+def forward_propagation(X, w1, b1, w2, b2):
+    z1 = X * w1 + b1
+    A1 = ReLU(z1)
+    y = A1 * w2 + b2
+
+    return y
+
+
 def main():
     data_df, data = init_data()  # inner row in big list: sample
 
