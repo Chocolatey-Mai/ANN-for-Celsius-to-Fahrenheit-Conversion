@@ -24,7 +24,7 @@ def init_parameters(data):
 
 
 def ReLU(x):
-    return max(0, x)
+    return np.maximum(0, x)
 
 
 def forward_propagation(X, w1, b1, w2, b2):
