@@ -23,6 +23,10 @@ def init_parameters(data):
     return X, w1, b1, w2, b2
 
 
+def ReLU(x):
+    return max(0, x)
+
+
 def forward_propagation(X, w1, b1, w2, b2):
     z1 = X * w1 + b1
     A1 = ReLU(z1)
