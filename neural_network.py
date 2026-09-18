@@ -35,6 +35,10 @@ def forward_propagation(X, w1, b1, w2, b2):
     return y
 
 
+# TODO: Backward propagation
+# TODO: Gradient Descent
+
+
 def main():
     data_df, data = init_data()  # inner row in big list: sample
 
